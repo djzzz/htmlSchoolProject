@@ -2,34 +2,42 @@
 <html>
     <head>
         <title>SomeSite.se | home</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <header>
-            <img src="logo.jpeg" alt="SomeSite logotype">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Hotels</a></li>
-                </ul>
-                <a class="login" href="#">Login</a>
-            </nav>
+        <div class="wrapper">
+            <header>
+                <img src="img/logo.png" alt="Travelers logotype">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Hotels</a></li>
+                    </ul>
+                    <a class="login" href="login.html">Login</a>
+                </nav>
 
-        </header>
-        <main>
-            <h1>Login to the site</h1>
-            <form>
-                <label>Username:
-                    <input name="username" type="text">
-                </label> 
-                <label>Password:
-                    <input name="password" type="text">
-                </label>  
-            </form>
-        </main>
-        <footer>
-            <span>©Daniel Dehlin</span>
-        </footer>
+            </header>
+            <main class="main--login">
+                    <h1>Login to the site</h1>
+                    <form>
+                        <label>Username:<br>
+                            <input class="main--login-textinput" name="username" type="text">
+                        </label> 
+                        <label>Password:<br>
+                            <input class="main--login-textinput" name="password" type="text">
+                        </label>  
+                        <div class="main--login--action-area">
+                            <input class="btn-login" type="submit" value="Login">
+                            <input class="btn-login" type="submit" value="Register">
+                        </div>
+                    </form>
+                
+            </main>
+            <footer>
+                <span>©Daniel Dehlin</span>
+            </footer>
+        </div>
     </body>
+
 </html>
